@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <script>
+    name1=prompt("Player1's Name");
+    name2=prompt("Player2's Name");
+  </script>
+  <body>
+
+    <div class="container">
+      <h1>DICE IT!!!</h1>
+      <button id="playGameButton" onClick="document.getElementById('playGameButton').addEventListener('click', execute() );">Roll it</button><br>
+      <div class="dice">
+        <p id="p1">Player 1</p>
+        <script>
+          document.querySelector("#p1").innerHTML= name1;
+        </script>
+        <img class="img1" src="dice1.png">
+      </div>
+
+      <div class="dice">
+        <p id="p2">Player 2</p>
+        <script>
+          document.querySelector("#p2").innerHTML = name2;
+        </script>
+        <img class="img2" src="dice1.png">
+      </div>
+
+    </div>
+    
+  <script src="dicee.js" charset="utf-8">
+
+  </script>
+  </body>
+</html>
